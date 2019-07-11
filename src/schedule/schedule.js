@@ -22,7 +22,7 @@ class Schedule extends Component {
 	render() {
 		return(
 			<div id="schedule">
-				<Grid container direction="column" alignItems="center" justify="space-around" spacing={7}>
+				<Grid container direction="column" alignItems="center" justify="space-around" spacing={8}>
 					<Grid item xs={12}>
 						<Typography align='center' variant="h1">{this.text.swe.title}</Typography>
 					</Grid>
@@ -31,10 +31,10 @@ class Schedule extends Component {
 							<Typography variant="body1" align="center">{this.text.swe.pre}</Typography>
 						</Grid>
 					</Grid>				
-					<Grid item xs={12}>
-						<Button color="primary" href="https://cloud.timeedit.net/lu/web/lth1/ri17565450000YQQ95Z5537057y8Y5034gQ6g1X1Y55ZQ756.html" target="_blank" variant="text">Mottagningsschema Datateknik</Button>
-						<Button color="primary" href="https://cloud.timeedit.net/lu/web/lth1/ri17565450000YQQ95Z5537057y8Y5534gQ6g1X1Y55ZQ756.html" target="_blank" variant="text">Mottagningsschema InfoCom</Button>
-						<Button color="primary" href="https://cloud.timeedit.net/lu/web/lth1/ri1Q5006.html" target="_blank" variant="text">Schemageneratorn</Button>
+					<Grid item container xs={12} justify="space-evenly">
+						<Button href="https://cloud.timeedit.net/lu/web/lth1/ri17565450000YQQ95Z5537057y8Y5034gQ6g1X1Y55ZQ756.html" target="_blank" variant="outlined">Mottagningsschema Datateknik</Button>
+						<Button href="https://cloud.timeedit.net/lu/web/lth1/ri17565450000YQQ95Z5537057y8Y5534gQ6g1X1Y55ZQ756.html" target="_blank" variant="outlined">Mottagningsschema InfoCom</Button>
+						<Button href="https://cloud.timeedit.net/lu/web/lth1/ri1Q5006.html" target="_blank" variant="outlined">Schemageneratorn</Button>
 					</Grid>
 				</Grid>
 			</div>

@@ -24,7 +24,8 @@ a {
 }
 
 #schedule {
-  padding-top: 10vh;
+  padding-top: 3vh;
+  padding-bottom: 30vh;
   background: linear-gradient(to bottom left, #fefefe 50%, #f280a1 50%);
 }
 hr {
