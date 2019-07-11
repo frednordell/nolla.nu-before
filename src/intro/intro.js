@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
+//import Button from '@material-ui/core/Button'
+import Hidden from '@material-ui/core/Hidden'
 import Icon from '@material-ui/core/Icon'
-import Hidden from '@material-ui/core/Hidden';
+
+
 
 
 class Intro extends Component {
+
+	constructor(props) {
+    	super(props);
+	    // This binding is necessary to make `this` work in the callback
+	    this.handleTopClick = this.handleTopClick.bind(this);
+  	}
 
 	text = {
 		swe: {
@@ -20,6 +28,83 @@ class Intro extends Component {
 			body1: "",
 			body2: ""
 		}
+	};
+
+	handleTopClick() {
+		console.log("asd");
+		this.smoothScroll.scrollTo('multi');
+	};
+
+	smoothScroll = {
+	timer: null,
+
+	stop: function () {
+		clearTimeout(this.timer);
+	},
+
+	scrollTo: function (id, callback) {
+		var settings = {
+			duration: 1000,
+			easing: {
+				outQuint: function (x, t, b, c, d) {
+					return c*((t=t/d-1)*t*t*t*t + 1) + b;
+				}
+			}
+		};
+		var percentage;
+		var startTime;
+		var node = document.getElementById(id);
+		var nodeTop = node.offsetTop;
+		var nodeHeight = node.offsetHeight;
+		var body = document.body;
+		var html = document.documentElement;
+		var height = Math.max(
+			body.scrollHeight,
+			body.offsetHeight,
+			html.clientHeight,
+			html.scrollHeight,
+			html.offsetHeight
+		);
+		var windowHeight = window.innerHeight
+		var offset = window.pageYOffset;
+		var delta = nodeTop - offset;
+		var bottomScrollableY = height - windowHeight;
+		var targetY = (bottomScrollableY < delta) ?
+			bottomScrollableY - (height - nodeTop - nodeHeight + offset):
+			delta;
+
+		startTime = Date.now();
+		percentage = 0;
+
+		if (this.timer) {
+			clearInterval(this.timer);
+		}
+
+		function step () {
+			var yScroll;
+			var elapsed = Date.now() - startTime;
+
+			if (elapsed > settings.duration) {
+				clearTimeout(this.timer);
+			}
+
+			percentage = elapsed / settings.duration;
+
+			if (percentage > 1) {
+				clearTimeout(this.timer);
+
+				if (callback) {
+					callback();
+				}
+			} else {
+				yScroll = settings.easing.outQuint(0, elapsed, offset, targetY, settings.duration);
+				window.scrollTo(0, yScroll);
+				this.timer = setTimeout(step, 10);     
+			}
+		}
+
+		this.timer = setTimeout(step, 10);
+	}
 	};
 
 	render() {
@@ -55,7 +140,9 @@ class Intro extends Component {
 						<br />
 						<Typography variant="body1" align="center">{this.text.swe.body1}</Typography>
 						<br />
-						<Button variant="text"><Icon style={{marginRight: '5px'}}>arrow_downward</Icon> Läs Mer!</Button>
+						<Typography variant="h4" align="center">Scrolla ner!</Typography>
+						<Icon style={{marginRight: '5px'}} onClick={this.handleTopClick}>arrow_downward</Icon>
+						{/*<Button variant="text"><Icon style={{marginRight: '5px'}} onClick={this.handleTopClick}>arrow_downward</Icon> Läs Mer!</Button>*/}
 					</Grid>
 				</Grid>
 			</div>
