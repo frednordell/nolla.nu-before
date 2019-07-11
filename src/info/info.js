@@ -97,7 +97,7 @@ class Info extends Component {
 								<Typography variant="body1" align="center">{this.text.swe.feel.body1}</Typography>
 								<List>
 									<ListItem>
-										<ListItemText> <b>Staben eller pepparna</b>, spec/iellt om det rör just saker som har hänt under nollningen. </ListItemText>
+										<ListItemText> <b>Staben eller pepparna</b>, speciellt om det rör just saker som har hänt under nollningen. </ListItemText>
 									</ListItem>
 									<ListItem> 
 										<ListItemText> <b>Din phadder</b>, som kan hjälpa dig att hitta rätt person att prata med. </ListItemText>

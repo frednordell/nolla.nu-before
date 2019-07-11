@@ -18,10 +18,10 @@ class Intro extends Component {
 
 	text = {
 		swe: {
-			title: "Hejsan blivande teknolog!",
+			title: "Hejsan blivande Data- eller infocomteknolog!",
 			pre: "Stort grattis till att du har blivit antagen till Sveriges i särklass roligaste skola: LTH! ",
 			body1: "För att du ska känna dig välkommen och inte alltför vilsen i början så kommer du genomgå en nollning. Den sträcker sig över de första veckorna och tillsammans kommer vi försöka se till att de här veckorna blir några av de roligaste i ditt liv. Eftersom nollningen har ett sådant fullspäckat schema så är det inte säkert att du orkar vara med på allt, och det är helt okej. Du väljer själv vilka aktiviteter du vill delta i. Något som däremot är säkert är att du kommer träffa väldigt många vänner och ha oerhört kul under tiden!",
-			body3: "Uppropet kommer hållas den 26:e augusti klockan 09:15 i Kåraulan både för de som ska studera Datateknik och de som ska studera InfoCom. Kåraulan hittar du på Sölvegatan 22A. Se till att vara i tid; det är obligatoriskt att vara där för att få behålla sin plats vid utbildningen. Om du har några frågor som rör nollningen så kan du alltid höra av dig till staben@dsek.se."
+			body3: "Uppropet kommer hållas den 26:e augusti klockan 09:15 i Kåraulan både för de som ska studera Datateknik och de som ska studera InfoCom. Kåraulan hittar du på Sölvegatan 22A. Se till att vara i tid; det är obligatoriskt att vara där för att få behålla sin plats vid utbildningen. Om du har några frågor som rör mottagningen så kan du alltid höra av dig till staben@dsek.se."
 		},
 		eng: {
 			title: "",

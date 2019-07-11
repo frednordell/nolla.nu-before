@@ -30,8 +30,8 @@ class Schedule extends Component {
 						</Grid>
 					</Grid>				
 					<Grid item container xs={12} justify="space-evenly">
-						<Button href="https://cloud.timeedit.net/lu/web/lth1/ri17565450000YQQ95Z5537057y8Y5034gQ6g1X1Y55ZQ756.html" target="_blank" variant="outlined">Mottagningsschema Datateknik</Button>
-						<Button href="https://cloud.timeedit.net/lu/web/lth1/ri17565450000YQQ95Z5537057y8Y5534gQ6g1X1Y55ZQ756.html" target="_blank" variant="outlined">Mottagningsschema InfoCom</Button>
+						<Button href="https://cloud.timeedit.net/lu/web/lth1/ri17565450000YQQ95Z5537057y8Y5034gQ6g1X1Y55ZQ756.html" target="_blank" variant="outlined">Mottagningsschema InfoCom</Button>
+						<Button href="https://cloud.timeedit.net/lu/web/lth1/ri17565450000YQQ95Z5537057y8Y5534gQ6g1X1Y55ZQ756.html" target="_blank" variant="outlined">Mottagningsschema Datateknik</Button>
 						<Button href="https://cloud.timeedit.net/lu/web/lth1/ri1Q5006.html" target="_blank" variant="outlined">Schemageneratorn</Button>
 					</Grid>
 				</Grid>
