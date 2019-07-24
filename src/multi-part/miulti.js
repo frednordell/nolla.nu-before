@@ -8,7 +8,7 @@ class Multi extends Component {
 	text = {
 		swe: {
 			intro: {
-				title: "Hejsan blivande teknolog!",
+				title: "Nollningen i korthet",
 				body1: "Nollningen är ett namn på de fem första veckorna av er tid här på LTH. Den första av dessa utspelar sig innan ordinarie undervisning börjar och det är här som aktiviteterna ligger som tätast. På dagarna ges nyttiga introduktionskurser i diverse ämnen och på kvällarna finns det roliga fritidsaktiviteter och fester att delta i."
 			},
 			zero: {
@@ -29,7 +29,26 @@ class Multi extends Component {
 			}
 		},
 		eng: {
-	
+			intro: {
+				title: "The Nollning in short",
+				body1: "Nollning is the Swedish name for Student Orientation Weeks and is what happens at LTH the first five weeks of your stay. It is also know as an Introduction. It begins one week prior to the regular education and this is also the time where the activities are most frequent. There will be lectures during daytime and activities and parties in the evening."
+			},
+			zero: {
+				title: "What is a nolla?",
+				body1: "A nolla (a zero) is most often a first year student. This student is taken care of by its phaddrar who always make sure the nolla is enjoying him- or herself! You are allowed to take part in plenty of funny parties and activities as a nolla, and also to become acquainted with your classmates. You are a nolla until the the nollegasque (the final party during the nollning) where you will become an etta (first year student) after a completed nollning-mission. If you are an exchange student then there is a great chance that you are not a first year student. This is no problem, you get to take part of all activities anyway!",
+			},
+			phadder: {
+				title: "What is a phadder?",
+				body1: "A phadder is an older student who often is dressed in an overall. The phadder knows an awful lot about LTH, the D-guild and about the student life. A phadder also knows virtually everything there is to know about the nollning activities, where lecture halls are located, how to order pizza, and where to go if you miss the last train home. Most of the phaddrar has been educated in leadership, alcohol laws and responsibilites, and a lot more, so do not hesitate to ask them about anything. The phadder exists for You.",
+			},
+			pepp: {
+				title: "What is a peppare?",
+				body1: "A peppare is someone who helps staben with their work regarding planning and realizing the nollning. They most often run around dressed in pink to make sure that both nollor and phaddrar are as excited and happy as they possibly can be. They know everything there is to know about how the nollning works - you can always ask a peppare if you've forgotten to buy tickets for an event or if you are unsure about where and when you are supposed to be."
+			},
+			stab: {
+				title: "What is staben?",
+				body1: "We, who are responsible for the nollning are called Staben. Staben plans and executes the nollning for the D-guild. The work regarding the nollning is led by me, the Överphös, and I've got five members of Staben supporting me this year. Every member of Staben studies either computer science or ICT (Information and Communication Technology) here at LTH, and we are working voluntarily and wholeheartedly in order to create the best nollning ever!",
+			}
 		}
 	};
 
@@ -37,39 +56,39 @@ class Multi extends Component {
 		return(
 			<div id="multi">
 				<Grid container direction="column" alignItems="center" justify="space-around" spacing={7}>
-					<Grid item xs={12}>
-						<Typography align='center' variant="h1">Nollningen i korthet</Typography>
+					<Grid item xs={10}>
+						<Typography align='center' variant="h1">{this.text[this.props.lang].intro.title}</Typography>
 					</Grid>
 					<Grid container direction="row" alignItems="flex-start" justify="center" spacing={0}>
-						<Grid item xs={12} md={6}>
-							<Typography variant="body1" align="center">{this.text.swe.intro.body1}</Typography>
+						<Grid item xs={10} md={6}>
+							<Typography variant="body1" align="center">{this.text[this.props.lang].intro.body1}</Typography>
 						</Grid>
 					</Grid>				
 					<Grid item xs={12}>
 						<Grid container direction="row" alignItems="flex-start" justify="space-evenly" spacing={2}>
-							<Grid item xs={12} md={3}>
-								<Typography variant="h4" align="center">{this.text.swe.zero.title}</Typography>
+							<Grid item xs={10} md={3}>
+								<Typography variant="h4" align="center">{this.text[this.props.lang].zero.title}</Typography>
 								<Divider></Divider>
-								<Typography variant="body1" align="center">{this.text.swe.zero.body1}</Typography>
+								<Typography variant="body1" align="center">{this.text[this.props.lang].zero.body1}</Typography>
 							</Grid>
-							<Grid item xs={12} md={3}>
-								<Typography variant="h4" align="center">{this.text.swe.phadder.title}</Typography>
+							<Grid item xs={10} md={3}>
+								<Typography variant="h4" align="center">{this.text[this.props.lang].phadder.title}</Typography>
 								<Divider></Divider>
-								<Typography variant="body1" align="center">{this.text.swe.phadder.body1}</Typography>
+								<Typography variant="body1" align="center">{this.text[this.props.lang].phadder.body1}</Typography>
 							</Grid>
 						</Grid>
 					</Grid>
 					<Grid item xs={12}>
 						<Grid container direction="row" alignItems="center" justify="space-evenly" spacing={2}>
-							<Grid item xs={12} md={3}>
-								<Typography variant="h4" align="center">{this.text.swe.pepp.title}</Typography>
+							<Grid item xs={10} md={3}>
+								<Typography variant="h4" align="center">{this.text[this.props.lang].pepp.title}</Typography>
 								<Divider></Divider>
-								<Typography variant="body1" align="center">{this.text.swe.pepp.body1}</Typography>
+								<Typography variant="body1" align="center">{this.text[this.props.lang].pepp.body1}</Typography>
 							</Grid>
-							<Grid item xs={12} md={3}>
-								<Typography variant="h4" align="center">{this.text.swe.stab.title}</Typography>
+							<Grid item xs={10} md={3}>
+								<Typography variant="h4" align="center">{this.text[this.props.lang].stab.title}</Typography>
 								<Divider></Divider>
-								<Typography variant="body1" align="center">{this.text.swe.stab.body1}</Typography>
+								<Typography variant="body1" align="center">{this.text[this.props.lang].stab.body1}</Typography>
 							</Grid>
 						</Grid>
 					</Grid>

@@ -12,8 +12,8 @@ class Schedule extends Component {
 			pre: "Här nedan hittar ni era respektive scheman för mottagningsveckan. För att hitta ert vanliga schema så får ni klicka er in på schemageneratorn och fylla i D1 under studentgrupp om ni går på data, och C1 under studentgrupp om ni går på InfoCom.",
 		},
 		eng: {
-			title: "",
-			pre: "",
+			title: "Schedule",
+			pre: "Here you can find your respective schedules. To find your regular schedule you can click the button below and enter the correct course code.",
 		}
 	};
 
@@ -22,11 +22,11 @@ class Schedule extends Component {
 			<div id="schedule">
 				<Grid container direction="column" alignItems="center" justify="space-around" spacing={8}>
 					<Grid item xs={12}>
-						<Typography align='center' variant="h1">{this.text.swe.title}</Typography>
+						<Typography align='center' variant="h1">{this.text[this.props.lang].title}</Typography>
 					</Grid>
 					<Grid container direction="row" alignItems="flex-start" justify="center" spacing={0}>
-						<Grid item xs={12} md={6}>
-							<Typography variant="body1" align="center">{this.text.swe.pre}</Typography>
+						<Grid item xs={10} md={6}>
+							<Typography variant="body1" align="center">{this.text[this.props.lang].pre}</Typography>
 						</Grid>
 					</Grid>				
 					<Grid item container xs={12} justify="space-evenly">
