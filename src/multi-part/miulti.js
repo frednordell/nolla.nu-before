@@ -25,7 +25,7 @@ class Multi extends Component {
 			},
 			stab: {
 				title: "Vad är Staben?",
-				body1: "Vi som ansvarar för nollningen kallas för staben. Staben planerar och genomför D-sektionens nollning. Arbetet med nollningen leds av mig, Överphös, och i år har jag fem stabsmedlemmar bakom mig. Alla vi i staben läser Datateknik eller Infocom och arbetar ideellt och helhjärtat med att genomföra den bästa nollningen någonsin!",
+				body1: "Vi som ansvarar för nollningen kallas för staben. Staben planerar och genomför D-sektionens nollning. Arbetet med nollningen leds av mig, Överphös, och i år har jag fyra stabsmedlemmar bakom mig. Alla vi i staben läser Datateknik eller Infocom och arbetar ideellt och helhjärtat med att genomföra den bästa nollningen någonsin!",
 			}
 		},
 		eng: {
@@ -47,7 +47,7 @@ class Multi extends Component {
 			},
 			stab: {
 				title: "What is staben?",
-				body1: "We, who are responsible for the nollning are called Staben. Staben plans and executes the nollning for the D-guild. The work regarding the nollning is led by me, the Överphös, and I've got five members of Staben supporting me this year. Every member of Staben studies either computer science or ICT (Information and Communication Technology) here at LTH, and we are working voluntarily and wholeheartedly in order to create the best nollning ever!",
+				body1: "We, who are responsible for the nollning are called Staben. Staben plans and executes the nollning for the D-guild. The work regarding the nollning is led by me, the Överphös, and I've got four members of Staben supporting me this year. Every member of Staben studies either computer science or ICT (Information and Communication Technology) here at LTH, and we are working voluntarily and wholeheartedly in order to create the best nollning ever!",
 			}
 		}
 	};

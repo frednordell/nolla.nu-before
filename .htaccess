@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteRule ^admin/?$	http://ta.hand.om.en.nolla.nu [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !/\d{4}
+RewriteCond %{REQUEST_FILENAME} !admin
+RewriteCond %{REQUEST_FILENAME} !favicon.ico
+RewriteCond %{TIME_YEAR} !-d
+RewriteRule ^(.*)$ /%{TIME_YEAR}/$1	[L,QSA]
+
+#<Directory 2014>
+#	DirectoryIndex nollning.html index.html index.php
+#</Directory>
