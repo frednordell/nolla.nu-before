@@ -31,7 +31,7 @@ class App extends Component {
     } else {
       navigatorLanguage = navigator.userLanguage || navigator.language || navigator.browserLanguage || 'en';
     }
-    this.state = {lang: navigatorLanguage !== "sv"? "eng" : "swe"}
+    this.state = {lang: navigatorLanguage.includes("en") ? "eng" : "swe"}
   }
 
   text =  {

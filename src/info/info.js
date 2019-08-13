@@ -44,7 +44,8 @@ class Info extends Component {
 					stab: ["Staben eller pepparna", ", speciellt om det rör just saker som har hänt under nollningen."],
 					phadder: ["Din phadder", ", som kan hjälpa dig att hitta rätt person att prata med."],
 					health: ["Studenthälsan", "De tar hand om studenter som behöver hjälp, mer info finns på deras hemsida:"],
-					kutators: ["LTH:s egna kuratorer", ", mer info finns på deras hemsida:"]
+					kutators: ["LTH:s egna kuratorer", ", mer info finns på deras hemsida:"],
+					liku: ["Trivselrådet", ", D-sektionens likabehandlingsutskott"]
 				}
 			}
 		},
@@ -79,7 +80,8 @@ class Info extends Component {
 					stab: ["Staben or pepparna", ", especially if there's anything that can be directly related to the nollning."],
 					phadder: ["Your phadder", ", who can help you find the right person to talk to."],
 					health: ["Studenthälsan", "(the student health counselling). They take care of students who need help You can find more information on their website."],
-					kutators: ["LTH:s own counselors", ", more info on their web page:"]
+					kutators: ["LTH:s own counselors", ", more info on their web page:"],
+					liku: ["Trivselrådet", ", The D-guilds equal opportunities representatives"]
 				}
 			}
 		}
@@ -161,6 +163,12 @@ class Info extends Component {
 									</ListItem>
 									<ListItem>
 										<Fab  color="secondary" size="small" href="http://www.student.lth.se/stod_i_studierna/kuratorer_lth/" target="_blank"><Icon>link</Icon></Fab>	
+									</ListItem>
+									<ListItem>
+										<ListItemText> <b>{this.text[this.props.lang].feel.points.liku[0]}</b>{this.text[this.props.lang].feel.points.liku[1]}</ListItemText>
+									</ListItem>
+									<ListItem>
+										<Fab  color="secondary" size="small" href="mailto:trivselm@dsek.se" target="_blank"><Icon>mail</Icon></Fab>	
 									</ListItem>
 								</List>
 							</Grid>
