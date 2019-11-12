@@ -9,7 +9,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
-import Hidden from '@material-ui/core/Hidden';
 
 class Info extends Component {
 	text = {
@@ -88,34 +87,34 @@ class Info extends Component {
 	};
 
 	render() {
-		return(
+		return (
 			<div id="info">
 				<Grid container direction="column" alignItems="center" justify="space-around" spacing={7}>
 					<Grid item xs={12}>
 						<Typography align='center' variant="h1">{this.text[this.props.lang].text}</Typography>
-					</Grid>				
+					</Grid>
 					<Grid item xs={12}>
 						<Grid container direction="row" alignItems="flex-start" justify="space-evenly" spacing={2}>
 							<Grid item xs={10} md={3} align="center">
 								<Typography variant="h4" align="center">{this.text[this.props.lang].tlth.title}</Typography>
 								<Divider></Divider>
 								<Typography variant="body1" align="center">{this.text[this.props.lang].tlth.body1}</Typography>
-								<Button href="https://tlth.se" target="_blank" variant="text"><Icon style={{marginRight: '5px'}}>link</Icon>tlth.se</Button>
+								<Button href="https://tlth.se" target="_blank" variant="text"><Icon style={{ marginRight: '5px' }}>link</Icon>tlth.se</Button>
 							</Grid>
 							<Grid item xs={10} md={3} align="center">
 								<Typography variant="h4" align="center">{this.text[this.props.lang].dsek.title}</Typography>
 								<Divider></Divider>
 								<Typography variant="body1" align="center">{this.text[this.props.lang].dsek.body1}</Typography>
-								<Button color="primary" href="https://dsek.se" target="_blank" variant="text"><Icon style={{marginRight: '5px'}}>link</Icon>dsek.se</Button>
+								<Button color="primary" href="https://dsek.se" target="_blank" variant="text"><Icon style={{ marginRight: '5px' }}>link</Icon>dsek.se</Button>
 							</Grid>
 							<Grid item xs={10} md={3}>
 								<Typography variant="h4" align="center">{this.text[this.props.lang].housing.title}</Typography>
 								<Divider></Divider>
 								<Typography variant="body1" align="center">{this.text[this.props.lang].housing.body1}</Typography>
 								{this.props.lang === "swe" ? <ButtonGroup variant="outlined" size="small">
-									<Button href="https://www.afbostader.se/" target="_blank" variant="outlined"><Icon style={{marginRight: '5px'}}>link</Icon>afb</Button>
-									<Button href="https://bopoolen.nu/" target="_blank" variant="outlined"><Icon style={{marginRight: '5px'}}>link</Icon>bopoolen</Button>
-									<Button href="https://www.studentlund.se/bostad/" target="_blank" variant="outlined"><Icon style={{marginRight: '5px'}}>link</Icon>studentlund</Button>
+									<Button href="https://www.afbostader.se/" target="_blank" variant="outlined"><Icon style={{ marginRight: '5px' }}>link</Icon>afb</Button>
+									<Button href="https://bopoolen.nu/" target="_blank" variant="outlined"><Icon style={{ marginRight: '5px' }}>link</Icon>bopoolen</Button>
+									<Button href="https://www.studentlund.se/bostad/" target="_blank" variant="outlined"><Icon style={{ marginRight: '5px' }}>link</Icon>studentlund</Button>
 								</ButtonGroup> : ""}
 							</Grid>
 						</Grid>
@@ -149,7 +148,7 @@ class Info extends Component {
 									<ListItem>
 										<ListItemText> <b>{this.text[this.props.lang].feel.points.stab[0]}</b>{this.text[this.props.lang].feel.points.stab[1]}</ListItemText>
 									</ListItem>
-									<ListItem> 
+									<ListItem>
 										<ListItemText> <b>{this.text[this.props.lang].feel.points.phadder[0]}</b>{this.text[this.props.lang].feel.points.phadder[1]}</ListItemText>
 									</ListItem>
 									<ListItem>
@@ -162,13 +161,13 @@ class Info extends Component {
 										<ListItemText> <b>{this.text[this.props.lang].feel.points.kutators[0]}</b>{this.text[this.props.lang].feel.points.kutators[1]}</ListItemText>
 									</ListItem>
 									<ListItem>
-										<Fab  color="secondary" size="small" href="http://www.student.lth.se/stod_i_studierna/kuratorer_lth/" target="_blank"><Icon>link</Icon></Fab>	
+										<Fab color="secondary" size="small" href="http://www.student.lth.se/stod_i_studierna/kuratorer_lth/" target="_blank"><Icon>link</Icon></Fab>
 									</ListItem>
 									<ListItem>
 										<ListItemText> <b>{this.text[this.props.lang].feel.points.liku[0]}</b>{this.text[this.props.lang].feel.points.liku[1]}</ListItemText>
 									</ListItem>
 									<ListItem>
-										<Fab  color="secondary" size="small" href="mailto:trivselm@dsek.se" target="_blank"><Icon>mail</Icon></Fab>	
+										<Fab color="secondary" size="small" href="mailto:trivselm@dsek.se" target="_blank"><Icon>mail</Icon></Fab>
 									</ListItem>
 								</List>
 							</Grid>
