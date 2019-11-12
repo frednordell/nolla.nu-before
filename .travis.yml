@@ -10,8 +10,7 @@ before_deploy:
   # Set up git user name and tag this commit
   - git config --local user.name "frednordell"
   - git config --local user.email "fred@nordells.nu"
-  - export TRAVIS_TAG=${LATEST}
-  - git tag $TRAVIS_TAG
+  - git tag LATEST
 deploy:
   provider: releases
   skip_cleanup: true
