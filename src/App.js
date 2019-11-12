@@ -11,6 +11,10 @@ import Multi from './multi-part/miulti';
 import Info from './info/info';
 import Schedule from './schedule/schedule';
 import Button from '@material-ui/core/Button';
+import smoothscroll from 'smoothscroll-polyfill';
+ 
+// kick off the polyfill!
+smoothscroll.polyfill();
 
 let theme = responsiveFontSizes(createMuiTheme({
   palette: {
