@@ -8,6 +8,7 @@ script:
 - npm test
 before_deploy:
   # Set up git user name and tag this commit
+  - git tag -d LATEST
   - git config --local user.name "frednordell"
   - git config --local user.email "fred@nordells.nu"
   - git tag LATEST
